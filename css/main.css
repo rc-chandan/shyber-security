@@ -1,0 +1,98 @@
+ /* Default Light Theme */
+ :root {
+    --bg-color: #fff;
+    --text-color: #222;
+    --nav-bg-color: #f4f4f4;
+  }
+
+  /* Dark Theme */
+  #theme-toggle.dark {
+    --bg-color: #222;
+    --text-color: #fff;
+    --nav-bg-color: #151515;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .dark body {
+    background-image: url("../assets/legend-image.jpeg");
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Add your other custom styles here */
+
+  /* Header styles */
+  header {
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+
+  /* Navigation styles */
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--nav-bg-color);
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+  }
+
+  nav a:hover {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+
+  /* Main content styles */
+  .container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Footer styles */
+  footer {
+    background-color: var(--nav-bg-color);
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer p {
+    margin: 0;
+    color: var(--text-color);
+  }
+
+  /* Theme toggle button styles */
+  .theme-toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: var(--text-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+  }
